@@ -1,0 +1,63 @@
+<div class="center-square"></div>
+<div class="horizontal-rectangle"></div>
+<div class="vertical-rectangle"></div>
+<div class="circle center"></div>
+<div class="circle top-left"></div>
+<div class="circle top-right"></div>
+<div class="circle bottom-left"></div>
+<div class="circle bottom-right"></div>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #6592CF;
+  }
+  .center-square {
+    background: #060F55;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 90px;
+    left: 140px;
+  }
+.horizontal-rectangle, .vertical-rectangle {
+    position: absolute;
+    top: 120px;
+    left: 75px;
+    width: 248px;
+    height: 58px;
+    background: #060F55;
+    border-radius: 30px;
+    border: 1px solid #060F55;
+  }
+  .vertical-rectangle {
+    transform: rotate(90deg);
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+    background: #6592CF;
+    border-radius: 30px;
+    position: absolute;
+  }
+  .center {
+    top: 120px;
+    left: 170px;
+  }
+  .top-right {
+    top: 60px;
+    left: 229px;
+  }
+  .top-left {
+    top: 60px;
+    left: 110px;
+  }
+  .bottom-right {
+    top: 179px;
+    left: 229px;
+  }
+  .bottom-left {
+    top: 179px;
+    left: 110px;
+  }
+</style>
