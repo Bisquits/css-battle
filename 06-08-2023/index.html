@@ -1,0 +1,35 @@
+<div class="square"></div>
+<div class="arrow"></div>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #998235;
+  }
+  .square {
+    width: 140px;
+    height: 140px;
+    background: #0B2429;
+    position: absolute;
+    top: 79px;
+    left: 87px;
+    transform: rotate(45deg);
+  }
+  .arrow:before {
+      transform: rotate(-45deg);
+      top: 42px;
+  }
+  .arrow:after {
+      transform: rotate(45deg);
+      top: 120px;
+  }
+  .arrow:before, .arrow:after {
+    content: '';
+    width: 30px;
+    height: 139px;
+    background: #0B2429;
+    position: absolute;
+    left: 266px;
+  }
+</style>
