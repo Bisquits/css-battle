@@ -1,0 +1,43 @@
+  <div class="semi-wrapper left">
+    <div class="semi-circle"></div>
+  </div>
+  <div class="semi-wrapper right">
+    <div class="semi-circle"></div>
+  </div>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+    .semi-wrapper {
+      width: 50%;
+    }
+    .semi-wrapper.right {
+      background: #F7EC7D;
+    }
+    .semi-wrapper.left {
+      background: #62306D;
+    }
+    .semi-circle {
+      position: absolute;
+      top: 50px;
+      width: 100px;
+      height: 200px;
+      background-color: #48abe0;
+    }
+    .left .semi-circle {
+      background: #F7EC7D;
+      border-radius: 100px 0 0 100px;
+      left: 100px;
+    }
+    .right .semi-circle {
+      background: #62306D;
+      border-radius: 0 100px 100px 0;
+      left: 200px;
+    }
+  </style>
