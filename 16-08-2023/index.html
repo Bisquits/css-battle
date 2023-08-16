@@ -1,0 +1,54 @@
+<div class="puzzle">
+  <div class="center"></div>
+  <div class="top"></div>
+  <div class="right"></div>
+  <div class="bottom"></div>
+  <div class="left"></div>  
+</div>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F5D6B4;
+  }
+  .puzzle * {
+    background: #D86F45;
+    position: absolute;
+  }
+  .puzzle .center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .top, .right, .left, .bottom {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .puzzle .top {
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .puzzle .bottom {
+    bottom: 45px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .puzzle .right {
+    right: 95px;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .puzzle .left {
+    left: 95px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background: #F5D6B4;
+  }
+</style>
