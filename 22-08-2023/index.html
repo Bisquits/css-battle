@@ -1,0 +1,27 @@
+<div class="half-circle left"></div>
+<div class="half-circle right"></div>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #926927;
+  }
+  .half-circle {
+    background: #F8B140;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .half-circle.left {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    left: calc(50% - 70px);
+  }
+  .half-circle.right {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    left: calc(50% + 70px);
+  }
+</style>
