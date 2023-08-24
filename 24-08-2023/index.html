@@ -1,0 +1,36 @@
+<div class="petal top left"></div>
+<div class="petal top right"></div>
+<div class="petal bottom left"></div>
+<div class="petal bottom right"></div>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #4F77FF;
+    position: relative;
+  }
+  .petal {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+    position: absolute;
+  }
+  .top {
+    top: 30px;
+  }
+  .top.right, .bottom.right {
+    left: 80px;
+  }
+  .top.left, .bottom.left {
+    left: 200px;
+  }
+  .bottom.right, .top.left {
+    transform: rotate(90deg);
+  }
+  .bottom {
+    top: 150px;
+  }
+</style>
