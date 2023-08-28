@@ -1,0 +1,56 @@
+<div class="dice">
+  <div class="dot top left"></div>
+   <div class="dot top right"> </div>
+   <div class="dot center"> </div>
+   <div class="dot bottom left"> </div>
+   <div class="dot bottom right"></div>
+</div>
+<style>
+  body {     
+    margin: 0;
+    background: #66284A;
+  }
+  .dice {
+    border-radius: 30px;
+    border: 10px solid #66284A;
+    margin: 90px 130px 130px 140px;
+    position: relative;
+  }
+  .dice,  .dice:before {
+    width: 140px;
+    height: 140px;
+    background: #F0CD48;
+  }
+  .dice:before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  .dot {
+    position: absolute;
+    background: #66284A;
+    border-radius: 50%;
+    width: 1.88rem;
+    height: 1.88rem;
+  }
+  .top {
+    top: 1.25rem;
+  }
+  .left {
+    left: 1.25rem;
+  }
+  .center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bottom {
+    bottom: 1.25rem;
+  }
+  .right {
+    right: 1.25rem;
+  }
+</style>
