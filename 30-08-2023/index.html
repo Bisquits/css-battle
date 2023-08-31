@@ -1,0 +1,30 @@
+<div class="t"></div>
+<div class="t"></div>
+<style>
+  body {
+    background: #F0CD48;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .t {
+    margin: 4.35rem 0rem;
+    width: 100px;
+    height: 5rem;
+    background: #66284A;
+    position: relative;
+  }
+  .t:before {
+    content: '';
+    width: 1.25rem;
+    height: 15rem;
+    background: #66284A;
+    position: absolute;
+  }
+  .t:first-child:before {
+    right: 0;
+  }
+</style>
