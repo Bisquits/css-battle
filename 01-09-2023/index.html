@@ -1,0 +1,35 @@
+<div class="sun">
+    <div class="sun-beam"></div>
+    <div class="sun-beam rotated60"></div>
+    <div class="sun-beam rotated120"></div>
+</div>
+<style>
+    body {
+        margin: 0;
+        background: #66284A;
+    }
+    .sun {
+        width: 9.38rem;
+        height: 9.38rem;
+        margin: 4.66rem auto;
+        position: relative;
+        border-radius: 50%;
+    }
+    .sun, .sun-beam {
+        background: #F0CD48;
+    }
+    .sun-beam {
+        border-radius: 20px;
+        position: absolute;
+        width: 2.52rem;
+        height: 15rem;
+        top: -2.81rem;
+        left: 3.43rem;
+    }
+    .sun-beam.rotated60 {
+        transform: rotate(60deg);
+    }
+    .sun-beam.rotated120 {
+        transform: rotate(120deg);
+    }
+</style>
