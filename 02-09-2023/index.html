@@ -1,0 +1,49 @@
+<div class="parent">
+  <div class="bar m"></div>
+  <div class="bar s"></div>
+  <div class="bar l"></div>
+  <div class="bar s"></div>
+  <div class="bar m"></div>
+  <div class="bar l"></div>
+</div>
+<style>
+  body {
+    background: #D669EC;
+    margin: 0;
+  }
+  .parent {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.28rem;
+  }
+  .bar {
+    position: relative;
+    align-self: flex-end;
+  }  
+  .bar.l {
+    height: 5.6rem;
+  }
+  .bar.m {
+    height: 5rem;
+  }
+  .bar.s {
+    height: 3.8rem;
+  }
+  .bar, .bar:before, .bar:after {
+    width: 1.85rem;
+    background: #FDFBF8;
+  }
+  .bar:before, .bar:after {
+    content: '';
+    height: 0.65rem;
+    position: absolute;
+  }
+   .bar:before {
+     top: -1.25rem;
+   }
+  .bar:after {
+    bottom: -1.25rem;
+  }
+</style>
