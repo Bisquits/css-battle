@@ -1,0 +1,31 @@
+<div class="half-circle"></div>
+<div class="line"></div>
+<div class="half-circle rotate"></div>
+<style>
+  body {
+    background: #D86F45;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.65rem;
+  }
+  .half-circle, .line {
+    width: 11.25rem;
+  }
+  .half-circle {
+    background: #F0CD48;
+    height: 5.6rem;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+  }
+  .half-circle.rotate {
+    transform: rotate(180deg);
+  }
+  .line {
+    height: 2.5rem;
+    background: #FDFBF8;
+  }
+</style>
