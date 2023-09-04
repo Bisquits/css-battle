@@ -1,0 +1,34 @@
+<div class="eraser"></div>
+<div class="pencil"></div>
+<div class="point"></div>
+<style>
+  body {
+    background: #F0CD48;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.65rem;
+  }
+  body > div {
+    background: #66284A;
+    width: 6.25rem;
+  }
+  .eraser {
+    height: 3.1rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .pencil {
+    height: 6.25rem;
+  }
+  .point {
+    width: 0;
+    height: 0;
+    border-top: 3.1rem solid #66284A;
+    border-right: 3.1rem solid #F0CD48;
+    border-left: 3.1rem solid #F0CD48;
+  }
+</style>
