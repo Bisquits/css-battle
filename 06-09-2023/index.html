@@ -1,0 +1,58 @@
+<div class="flower">
+    <div class="petals t"></div>
+    <div class="petals r"></div>
+    <div class="petals l"></div>
+    <div class="petals b"></div>
+    <div class="center"></div>
+  </div>
+  <style>
+    :root {
+       --offset-poz: 20;
+       --offset-neg: -45;
+    }
+    body {
+      margin: 0;
+      background: #A9C482;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .flower {
+      position: relative;
+    }
+    .flower > div {
+      border-radius: 50%;
+    }
+    .center {
+      width: 7.5rem;
+      height: 7.5rem;
+      position: relative;
+      background: #A9C482;
+    }
+    .petals {
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      background: #2D696F;
+    }
+    .t {
+      top: var(--offset-neg);
+    }
+    .r {
+      right: var(--offset-neg);
+    }
+    .b {
+     bottom: var(--offset-neg);
+    }
+    .l {
+      left: var(--offset-neg);
+    }
+    .t,.b {
+      left: var(--offset-poz);
+    }
+    .l, .r {
+      top: var(--offset-poz);
+    }
+  </style>
+  
