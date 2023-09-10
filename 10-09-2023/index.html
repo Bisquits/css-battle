@@ -1,0 +1,50 @@
+<div class="line b-light hor t"></div>
+<div class="line b-dark ver r"></div>
+<div class="line b-light hor b"></div>
+<div class="line b-dark ver l"></div>
+
+<style>
+  :root {
+    --lw: 10rem;
+    --lh: 2.5rem;
+    --vo: 6.25rem;
+    --ho: 3.1rem;
+  }
+  body {
+    margin: 0;
+    background: #FEFAE3;
+  }
+  .line {
+    position: absolute;
+  }
+  .b-light {
+    background: #D4A469;
+  }
+  .b-dark {
+    background: #B17036;
+  }
+  .hor {
+    width: var(--lw);
+    height: var(--lh);
+  }
+  .ver {
+    width: var(--lh);
+    height: var(--lw);
+  }
+  .t {
+    top: var(--ho);
+    left: var(--vo);
+  }
+  .b {
+    top: calc(var(--ho) + var(--lw));
+    left: calc(var(--vo) + var(--lh));
+  }
+  .l {
+    top: calc(var(--ho) + var(--lh));
+    left: var(--vo);
+  }
+  .r {
+    top: var(--ho);
+    left: calc(var(--vo) + var(--lw));
+  }
+</style>
