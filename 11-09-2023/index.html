@@ -1,0 +1,37 @@
+<div class="infinity"></div>
+<style>
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    background: #B5D1FB;
+}
+ .infinity {
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.infinity:before {
+    border-radius: 0 100px 100px 0;
+}
+.infinity:after{
+    border-radius: 100px 0 0 100px;
+}
+.infinity:before, .infinity:after {
+    margin: 0 -1.5em;
+    width: 15.5em;
+    height: 9.4em;
+    background: radial-gradient(transparent 4.75em, transparent calc(4.75em + 1px), rgba(255, 255, 255, 0) calc(6.25em - 1px), transparent calc(6.25em - .5px)), conic-gradient(from 90deg, #8819F6, #8819F6, #8819F6, #8819F6, #230259, #230259, #230259, #230259);
+    -webkit-mask: radial-gradient(transparent calc(4.75em - .5px), red 4.75em);
+    mask: radial-gradient(transparent calc(4.75em - .5px), red 4.75em);
+    content: '';
+}
+ .infinity:after {
+    transform: translatey(1px) rotatex(-1deg);
+    background: radial-gradient(transparent 4.75em, transparent calc(4.75em + 1px), rgba(255, 255, 255, 0) calc(6.25em - 1px), transparent calc(6.25em - .5px)), conic-gradient(from 270deg, #8819F6, #8819F6, #8819F6, #8819F6, #230259, #230259, #230259, #230259, #230259);
+}
+ 
+</style>
