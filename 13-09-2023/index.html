@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="three-quarter-circle nr135 b"></div>
+    <div class="three-quarter-circle nr45 b"></div>
+    <div class="three-quarter-circle r135 t"></div>
+    <div class="three-quarter-circle r45 t"></div>
+</div>
+<style>
+    body {
+        margin: 0;
+        background: #DA30D4;
+    }
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        place-items: center;
+        gap: 1.25rem;
+    }
+    .three-quarter-circle {
+        width: 0;
+        height: 0;
+        border: 3.15rem solid #0C0C49;
+        border-left-color: #0C0C49;
+        border-radius: 3.15rem;
+        border-left-color: transparent;
+    }
+    .b {
+        align-self: end;
+    }
+    .t {
+        align-self: start;
+    }
+    .r45 {
+        transform: rotate(45deg);
+    }
+    .nr45 {
+        transform: rotate(-45deg);
+    }
+    .r135 {
+        transform: rotate(135deg);
+    }
+    .nr135 {
+        transform: rotate(-135deg);
+    }
+</style>
