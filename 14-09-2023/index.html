@@ -1,0 +1,33 @@
+<div class="square"></div>
+<style>
+  body {
+    margin: 0;
+    background: #5E2948;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .square {
+    width: 13.75rem;
+    height: 10rem;
+    background: #E7A366;
+    position: relative;
+  }
+  .square:before, .square:after {
+    content: '';
+    position: absolute;
+    width: 21rem;
+    height: 5rem;
+    border: 1.3rem solid #5E2948;
+    border-color: #5E2948 transparent transparent transparent;
+    border-radius: 50%/5rem 5rem  0 0;
+    left: -5rem;
+  }
+  .square:before {
+    top: 3.1rem;
+  }
+  .square:after {
+    top: 5.6rem;
+  }
+</style>
