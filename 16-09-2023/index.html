@@ -1,0 +1,48 @@
+<div class="circle">
+    <div class="line t"></div>
+    <div class="line r r90"></div>
+    <div class="line b"></div>
+    <div class="line l r90"></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #8647E6;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .circle {
+      position: relative;
+      background: #EFEB99;
+      width: 12.5rem;
+      height: 12.5rem;
+      border-radius: 50%;
+    }
+    .line {
+      position: absolute;
+      width: 9.5rem;
+      height: 1.25rem;
+      background: #8647E6;
+    }
+    .t {
+      top: 3.1rem;
+      left: 3.11rem;
+    }
+    .b {
+      top: 8.1rem;
+      left: -1rem;
+    }
+    .r {
+      top: 4rem;
+      right: -1rem;
+    }
+    .l {
+      top: 8rem;
+        left: -1rem;
+    }
+    .r90 {
+      transform: rotate(90deg);
+    }
+  </style>
