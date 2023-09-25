@@ -1,0 +1,33 @@
+<div class="house">
+    <div class="roof"></div>
+    <div class="walls"></div>
+    <div class="roof mirrored"></div>
+</div>
+<style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      background: #A9C482;
+    }
+    .house {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+    .walls {
+      width: 9.4rem;
+      height: 9.4rem;
+      background: #2D696F;
+    }
+    .roof {
+      width: 0;
+      height: 0;
+      border-right: 3.15rem solid #2D696F;
+      border-top: 6.25rem solid transparent;
+      margin-bottom: 3.2rem;
+    }
+    .mirrored {
+      transform: scale(-1, 1);
+    }
+</style>
