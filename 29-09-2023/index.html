@@ -1,0 +1,47 @@
+<div class="container"> 
+    <div class="i ro"></div>
+    <div class="square"></div>
+    <div class="i lo mirrored"></div>
+  </div>
+  <style>
+    body {
+      background: #FEFAE3;
+      margin: 0;
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .i {
+      width: 10.6rem;
+      height: 3.8rem;
+      background: #D4A469;
+      position: relative;
+    }
+    .i:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 13.76rem;
+      width: 3.75rem;
+      height: 3.75rem;
+      background: #B17036;
+    }
+    .ro {
+      margin-right: 6.9rem;
+    }
+    .lo {
+      margin-left: 6.9rem;
+    }
+    .mirrored {
+      transform: scale(-1, 1);
+    }
+    .square {
+      width: 3.75rem;
+      height: 3.1rem;
+      background: #D4A469;
+    }
+  </style>
