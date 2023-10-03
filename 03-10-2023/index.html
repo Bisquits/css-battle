@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="line t"></div>
+    <div class="line r r120"></div>
+    <div class="line l nr120"></div>
+    <div class="circle"></div>
+</div>
+<style>
+    body {
+      margin: 0;
+      background: #FEFAE0;
+    }
+    .container {
+      position: relative;
+      height: 100%;
+    }
+    .container > div {
+      background: #9CCCDB;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      outline: 1.25rem solid #9CCCDB;
+      border: 3.15rem solid #FEFAE0;
+    }
+    .line {
+      width: 1.25rem;
+      height: 4rem;
+      position: absolute;
+      z-index: 1;
+    }
+    .t {
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .r {
+      top: 49%;
+      left: 60%;
+    }
+    .l {
+      top: 49%;
+      right: 60%;
+    }
+    .r120 {
+      transform: rotate(120deg);
+    }
+    .nr120 {
+      transform: rotate(-120deg);
+    }
+</style>
+  
