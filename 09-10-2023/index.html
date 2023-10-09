@@ -1,0 +1,37 @@
+<div class="i t"></div>
+<div class="i b r"></div>
+<style>
+  body {
+    margin: 0;
+    background: #B5D1FB;
+    display: flex;
+    justify-content: center;
+    gap: 3.75rem;
+    height: 100vh;
+  }
+  .i {
+    width: 3.75rem;
+    background: #8819F6;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+  }
+  .i:after {
+    content: '';
+    position: absolute;
+    top: -5.65rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    background: #230259;
+  }
+  .t {
+    margin-top: 7.5rem;
+  }
+  .b {
+    margin-bottom: 7.5rem;
+  }
+  .r {
+    transform: rotate(180deg);
+  }
+</style>
