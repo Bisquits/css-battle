@@ -1,0 +1,34 @@
+
+<div class="g"></div>
+<div class="g m"></div>
+<style>
+  body {
+    margin: 0;
+    background: #FEFAE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9rem;
+    height: 100vh;
+  }
+  .g {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    background: #FEFAE0;
+    border: 1.9rem solid #9CCCDB;
+    position: relative;
+  }
+  .g:after {
+    content: '';
+    width: 1.9rem;
+    height: 10rem;
+    background: #9CCCDB;
+    position: absolute;
+    top: 1.3rem;
+    left: -1.85rem;
+  }
+  .g.m:after {
+    left: 3.7rem;
+  }
+</style>
