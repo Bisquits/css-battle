@@ -1,0 +1,33 @@
+<div class="c"></div>
+<div class="b c"></div>
+<div class="c"></div>
+<style>
+  body {
+    margin: 0;
+    background: #DA30D4;
+  }
+  .c {
+    width: 3.75rem;
+    height: 3.75rem;
+    background: #DA30D4;
+    border-radius: 50%;
+    border: 1.9rem solid #0C0C49;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .c.b {
+    z-index: 10;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  .c:first-of-type {
+    left: 30%;
+  }
+  .c:nth-of-type(2) {
+    left: 50%;
+  }
+  .c:last-of-type {
+    left: 70%;
+  }
+</style>
