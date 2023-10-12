@@ -1,0 +1,35 @@
+<div class="d b"></div>
+<div class="l b"></div>
+<div class="d b"></div>
+<style>
+  body {
+    margin: 0;
+    background: #FEFAE3;
+  }
+  .b {
+    width: 9.4rem;
+    height: 3.1rem;
+    border-radius: 25px;
+    position: absolute;
+  }
+  .l.b {
+    background: #D4A469;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11rem;
+    z-index: -1;
+  }
+  .d.b {
+    background: #B17036;
+    transform: rotate(-45deg);
+  }
+  .b:first-of-type {
+    top: 30%;
+    left: 21.2%;
+  }
+  .b:last-of-type {
+    top: 53.5%;
+    left: 41%;
+  }
+</style>
