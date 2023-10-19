@@ -1,0 +1,34 @@
+<div class="s"></div>
+<div class="s"></div>
+<style>
+  body {
+    margin: 0;
+    background: #F6E49C;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .s {
+    border: 2.5rem solid #2F5C24;
+    position: relative;
+  }
+  .s, .s:before {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .s:before {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+  .s:first-of-type:before {
+    left: -2.5rem;
+    background: #F6E49C;
+  }
+  .s:last-of-type:before {
+    left: -5rem;
+    background: #2F5C24;
+  }
+</style>
