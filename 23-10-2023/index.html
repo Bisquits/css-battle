@@ -1,0 +1,37 @@
+<div class="f v">
+    <div class="s"></div>
+    <div class="f h">
+      <div class="s"></div>
+      <div class="b s"></div>
+      <div class="s"></div>
+    </div>
+    <div class="s"></div>
+</div>
+<style>
+      body {
+        margin: 0;
+        background: #FEFAE0;
+      }
+      .f {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.55rem;
+      }
+      .f.v {
+        flex-direction: column;
+        height: 100vh;
+      }
+      .f.h {
+        flex-direction: row;
+      }
+      .s {
+        width: 3.15rem;
+        height: 3.15rem;
+        background: #9CCCDB;
+      }
+      .b.s {
+        width: 6.25rem;
+        height: 6.25rem;
+      }
+</style>
