@@ -1,0 +1,37 @@
+<div class="p">
+    <div class="l"></div>
+    <div class="l"></div>
+    <div class="l"></div>
+  </div>
+  <div class="s"></div>
+  <style>
+    body {
+      margin: 0;
+      background: #e3B52E;
+      box-sizing: border-box;
+    }
+    .p {
+      display: flex;
+      justify-content: center;
+      gap: 1.85rem;
+      position: relative;
+      height: 100%;
+    }
+    .l {
+      width: 1.9rem;
+      height: 100%;
+      background: #8C292A;
+    }
+    .s {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #E3B52E;
+      transform: translate(-50%, -50%) rotate(45deg);
+      z-index: 1;
+      width: 5.65rem;
+      height: 5.65rem;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      border: 1.9rem solid #8C292A;
+    }
+  </style>
