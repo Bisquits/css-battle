@@ -1,0 +1,49 @@
+<div class="p">
+    <div class="r"></div>
+    <div class="c"></div>
+    <div class="r"></div>
+</div>
+<style>
+      body {
+        background: #872626;
+        box-sizing: border-box;
+      }
+      .c {
+        width: 3.05rem;
+        height: 3.05rem;
+        background: #E3745D;
+        border-radius: 50%;
+        border: 2.5rem solid #872626;
+        outline: 1.25rem solid #E3745D;
+      }
+      .r {
+        transform: rotate(90deg);
+        left: 2.15rem;
+      }
+      .r:first-child {
+        top: -1.3rem;
+      }
+      .r, .c:before, .c:after {
+        background: #E3745D;
+        width: 3.7rem;
+        height: 1.25rem;
+        border-radius: 20px;
+        position: absolute;
+      }
+      .c:before, .c:after {
+        content: '';
+        top: 3.4rem;
+      }
+      .c:before {
+        left: -2.5rem;
+      }
+      .c:after {
+        right: -2.5rem;
+      }
+      .p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+</style>
