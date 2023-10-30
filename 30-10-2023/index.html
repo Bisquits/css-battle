@@ -19,16 +19,32 @@
   .a, .a:before {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    margin: 0 -0.85rem;
+    margin: 0 -0.9rem;
   }
-  .a:before {
+  .a:before, .a:after, .a.r:after {
     content: '';
     position: absolute;
+  }
+  .a:before {
     top: 25%;
     right: 0.9rem;
     background: #fff;
     width: 4rem;
     height: 3.75rem;
+  }
+  .a:after, .a.r:after {
+    background: #F58220;
+    width: 1.9rem;
+    height: 2rem;
+  }
+  .a:after {
+    z-index: 1;
+    bottom: -2rem;
+    right: -1.9rem;
+  }
+  .a.r:after {
+    top: 7.5rem;
+    right: -1.9rem;
   }
   .r {
     transform: rotate(180deg);
