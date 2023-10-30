@@ -1,0 +1,36 @@
+<div class="a"></div>
+<div class="a r"></div>
+<style>
+  body {
+    margin: 0;
+    background: #F58220;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .a {
+    background: #F58220;
+    width: 5.85rem;
+    height: 7.5rem;
+    border: 1.9rem solid #fff;
+    position: relative;
+  }
+  .a, .a:before {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin: 0 -0.85rem;
+  }
+  .a:before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: 0.9rem;
+    background: #fff;
+    width: 4rem;
+    height: 3.75rem;
+  }
+  .r {
+    transform: rotate(180deg);
+  }
+</style>
