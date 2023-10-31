@@ -1,0 +1,45 @@
+<div class="g">
+    <div class="s"></div>
+    <div class="s r"></div>
+    <div class="s p"></div>
+    <div class="s r"></div>
+    <div class="s"></div>
+    <div class="s r"></div>
+    <div class="s p"></div>
+    <div class="s r"></div>
+    <div class="s"></div>
+</div>
+<style>
+    body {
+        margin: 0;
+        box-sizing: border-box;
+        background: #763258;
+    }
+    .g {
+        display: grid;
+        grid-template-columns: repeat(3, 3.75rem);
+        grid-template-rows: repeat(3, 3.75rem);
+        margin: 3.75rem 6.86rem;
+    }
+    .s {
+        width: 3.75rem;
+        position: relative;
+    }
+    .s:after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 1.9rem;
+    }
+    .s, .s:after {
+        height: 1.85rem;
+        background: #FAD5E5;
+    }
+    .s.p, .s.p:after {
+        background: #F067A6;
+    }
+    .s.r, .s.r:after {
+        background: #763258;
+    }
+</style>
