@@ -1,0 +1,46 @@
+<div class="f v">
+    <div class="c"></div>
+    <div class="f">
+        <div class="c"></div>
+        <div class="c z"></div>
+        <div class="c"></div>
+    </div>
+    <div class="c"></div>
+</div>
+<style>
+      body {
+        margin: 0;
+        background: #302562;
+        box-sizing: border-box;
+      }
+      .f {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .f.v {
+        flex-direction: column;
+        margin-top: 60px;
+      }
+      .c {
+        margin: -30px -30px;
+        width: 7.5rem;
+        height: 7.5rem;
+        background: #302562;
+        position: relative;
+      }
+      .c:after {
+        content: '';
+        width: 3.75rem;
+        height: 3.75rem;
+        background: #302562;
+        border-radius: 50%;
+        border: 1.25rem solid #0098D1;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .c.z {
+        z-index: 1;
+      }
+</style>
