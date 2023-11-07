@@ -1,0 +1,30 @@
+<div class="t"></div>
+<div class="s"></div>
+<div class="t r"></div>
+<style>
+  body {
+    margin: 0;
+    background: #9B3E41;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.55rem;
+  }
+  .s {
+    width: 7.5rem;
+    height: 7.5rem;
+    background: #FFFEF2;
+    transform: rotate(45deg);
+  }
+  .t {
+    width: 0;
+    height: 0;
+    border-right: 5.3rem solid #FFDC57;
+    border-top: 5.3rem solid transparent;
+    border-bottom: 5.3rem solid transparent;
+  }
+  .t.r {
+    transform: scale(-1);
+  }
+</style>
