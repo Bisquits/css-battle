@@ -1,0 +1,58 @@
+<div class="f v">
+    <div class="f">
+      <div class="c"></div>
+      <div class="c"></div>
+    </div>
+    <div class="f">
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+    </div>
+      <div class="f">
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+    </div>
+      <div class="f">
+      <div class="c"></div>
+      <div class="c"></div>
+    </div>
+    </div>
+    <style>
+      body {
+        margin: 0;
+        background: #3A345E;
+      }
+      .f {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+      }
+      .f.v {
+        flex-direction: column;
+        margin-top: 1.85rem;
+        height: 100vh;
+        position: relative;
+      }
+      .v:before, .v:after {
+        content: '';
+        position: absolute;
+        height: 3.9rem;
+        bottom: 0;
+        left: 37.5%;
+      }
+      .v:after {
+        height: 7.7rem;
+        left: 52.5%;
+      }
+      .v:before, .v:after, .c {
+        background: #E0DEF0;
+        width: 2.5rem;
+      }
+      .c {
+        height: 2.5rem;
+        border-radius: 50%;
+      }
+</style>
