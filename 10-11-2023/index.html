@@ -1,0 +1,48 @@
+<div class="p">
+    <div class="c t l"></div>
+    <div class="c t r"></div>
+    <div class="c b l"></div>
+    <div class="c b r"></div>
+</div>
+<style>
+      body {
+        margin: 0;
+        background: #FBC3E4;
+        box-sizing: border-box;
+      }
+      .p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        height: 100%;
+      }
+      .p:before {
+        content: '';
+        position: absolute;
+        width: calc(100% - 12.5rem);
+        height: calc(100% - 6.25rem);
+        background: transparent;
+        border-style: solid;
+        border-color: #FBC3E4;
+        border-width: 3.15rem 6.25rem;
+      }
+      .c {
+        width: 10rem;
+        height: 10rem;
+        background: transparent;
+        border: 2.5rem solid #8C0052;
+        border-radius: 50%;
+      }
+      .t {
+        margin-top: -4.4rem;
+      }
+      .l {
+        margin-left: -1.25rem; 
+      }
+      .r {
+        margin-left: -2.5rem; 
+      }
+      .b {
+        margin-top: -2.5rem;
+      }
+</style>
