@@ -1,0 +1,59 @@
+<div class="p">
+    <div class="c t l"></div>
+    <div class="d t r"></div>
+    <div class="d b l"></div>
+    <div class="d b r"></div>
+</div>
+<style>
+    body {
+      margin: 0;
+    }
+    .p {
+      position: relative;
+      height: 100vh;
+    }
+    .p > div {
+      position: absolute;
+    }
+    .c {
+      width: 12.5rem;
+      height: 12.5rem;
+      background: #FCDFEB;
+    }
+    .d {
+      height: 5rem;
+      position: relative;
+    }
+    .d:after {
+      content: '';
+      height: 2.5rem;
+      position: absolute;
+      top: 2.5rem;
+      left: -2.5rem;
+    }
+    body, .d, .d:after {
+      background: #73385A;
+    }
+    .d, .d:after {
+      width: 2.5rem;
+    }
+    .t {
+      top: 3.1rem;
+    }
+    .l {
+      left: 6.25rem;
+    }
+    .r {
+      right: 6.25rem;
+    }
+    .b {
+      bottom: 3.15rem;
+    }
+    .b.l {
+      left: 8.75rem;
+    }
+    .b.r {
+      transform: rotate(180deg);
+      right: 8.75rem;
+    }
+</style>
