@@ -1,0 +1,51 @@
+<div class="t a"></div>
+<div class="f v">
+<div class="c"></div>
+<div class="f">
+<div class="c"></div>
+<div class="s c"></div>
+<div class="c"></div>
+</div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #F58220;
+    height: 100vh;
+  }
+  .t {
+    width: 0;
+    height: 0;
+    border-bottom: 10rem solid #FFF;
+   border-right: 7.85rem solid transparent; 
+    border-left: 7.85rem solid transparent;
+  }
+  .a {
+    position: absolute;
+    top: 4.35rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+  }
+  .c {
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #F58220;
+    border-radius: 50%;
+  }
+  .s.c {
+    width: 50px;
+    height: 50px;
+  }
+  .f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .f.v {
+    flex-direction: column;
+    height: 100%;
+    margin-top: 15px;
+  }
+</style>
