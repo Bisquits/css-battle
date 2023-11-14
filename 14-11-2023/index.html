@@ -1,0 +1,41 @@
+
+<div class="p">
+    <div class="s w"></div>
+    <div class="s y"></div>
+    <div class="s w"></div>
+</div>
+<style>
+      body {
+        background: #C1A936;
+        margin: 0;
+      }
+      .s {
+        position: relative;
+      }
+      .s:after {
+        content: '';
+        position: absolute;
+      }
+      .s, .s:after {
+        width: 50px;
+        height: 50px;
+      }
+      .w, .w:after {
+        background: #FFFCDF;
+      }
+      .w:after {
+        top: 0;
+        left: 100px;
+      }
+      .y, .y:after {
+        background: #FFF56D;
+        margin-left: 50px;
+      }
+      .y:after {
+        top: 100px;
+        right: 0;
+      }
+      .p {
+        margin: 50px 125px;
+      }
+</style>
