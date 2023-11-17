@@ -1,0 +1,33 @@
+<div class="t"></div>
+<div class="l"></div>
+<style>
+  body, .t:before {
+    margin: 0;
+    background: #5B8395;
+  }
+  div {
+    margin: 40px auto -40px;
+  }
+  .t {
+    width: 0;
+    height: 0;
+    border-bottom: 180px solid #F1FAFE;
+    border-right: 90px solid transparent;
+    border-left: 90px solid transparent;
+    position: relative;
+  }
+  .t:before {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: -70px;
+    width: 140px;
+    height: 40px;
+    z-index: 1;
+  }
+  .l {
+    width: 40px;
+    height: 80px;
+    background: #F1FAFE;;
+  }
+</style>
