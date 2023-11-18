@@ -1,0 +1,59 @@
+<div class="f v">
+    <div class="l r"></div>
+    <div class="f">
+      <div class="l"></div>
+      <div class="s"></div>
+      <div class="l"></div>
+    </div>
+    <div class="l r"></div>
+</div>
+<style>
+      body {
+        background: #C6DD7F;
+      }
+      .f {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      .f.v {
+        margin-top: 4.2rem;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .l {
+        width: 50px;
+        height: 102px;
+        background-color: #486841;
+        border-radius: 50%;
+        position: relative;
+      }
+      .l:before, .l:after {
+        content: '';
+        position: absolute;
+        left: 0.4rem;
+        border-right: 1.17rem solid transparent;
+        border-left: 1.16rem solid transparent;
+        width: 0;
+        height: 0;
+      }
+      .l:before {
+        border-bottom: 2rem solid #486841;
+        top: -1rem;
+      }
+      .l:after {
+        border-top: 2rem solid #486841;
+        bottom: -1rem;
+      }
+      .r {
+        transform: rotate(90deg);
+        margin: -2.7rem 0;
+      }
+      .s {
+        width: 3.2rem;
+        height: 3.2rem;
+        background: #486841;
+      }
+</style>
+    
