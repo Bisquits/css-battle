@@ -1,0 +1,50 @@
+<div class="c"></div>
+<div class="f">
+<div class="s"></div>
+<div class="s m"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #004563;
+  }
+  .f {
+    display: flex;
+    gap: 1.9rem;
+    margin: -3.75rem 2.8rem;
+  }
+  .c {
+    margin: 3.75rem auto 0rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    background-color: #004563;
+    border: 1.9rem solid #92B6C7;
+    border-radius: 7.25rem 7.25rem 0 0;
+  }
+  .s {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3.75rem;
+    border: 1.9rem solid #92B6C7;
+    background: #004563;
+    position: relative;
+    z-index: -1;
+  }
+  .s:before, .s:after {
+    content: '';
+    background: #004563;
+    width: 4.2rem;
+    height: 8rem;
+    position: absolute;
+    top: -1rem;
+    left: -2rem;
+  }
+  .s:after {
+    transform: rotate(90deg);
+    top: -4.2rem;
+    left: 0.8rem;
+  }
+  .s.m {
+    transform: scaleX(-1);
+  }
+</style>
