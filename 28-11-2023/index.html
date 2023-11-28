@@ -1,0 +1,36 @@
+<div class="l"></div>
+<div class="l s"></div>
+<div class="l r"></div>
+<div class="l b"></div>
+<div class="l s"></div>
+<style>
+  body {
+    margin: 0;
+    background: #6B2222;
+  }
+  .l {
+    background: #F1F2F2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50px;
+    height: 130px;
+  }
+  .l.s {
+    height: 100px;
+    top: 80px;
+    left: 114.5px;
+  }
+  .s:last-of-type {
+    left: 284.5px;
+  }
+  .l.b {
+    width: 100px;
+    bottom: 0;
+  }
+  .r {
+    transform: rotate(90deg);
+    top: 90px;
+    left: 170px;
+  }
+</style>
