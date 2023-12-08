@@ -1,0 +1,41 @@
+<div class="f v">
+    <div class="t r180"></div>
+    <div class="f">
+      <div class="t r90"></div>
+      <div class="t r270"></div>
+    </div>
+    <div class="t"></div>
+    </div>
+    <style>
+      body {
+        margin: 0;
+        background: #5B8395;
+      }
+      .t {
+        width: 0;
+        height: 0;
+        border-bottom: 79.5px solid #E3F5FD;
+        border-right:79.5px solid transparent;
+        border-left: 79.5px solid transparent;
+      }
+      .f {
+        display: flex;
+        margin: -39 0 -39;
+        column-gap: 2.5px;
+      }
+      .f.v {
+        margin-top: 70;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .r90 {
+        transform: rotate(90deg);
+      }
+      .r180 {
+        transform: rotate(180deg);
+      }
+      .r270 {
+        transform: rotate(270deg);
+      }
+    </style>
