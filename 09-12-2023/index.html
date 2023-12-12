@@ -1,0 +1,46 @@
+<div class="f v">
+    <div class="f r">
+    <div class="h"></div>
+    <div class="h"></div>
+    </div>
+    <div class="f">
+    <div class="h"></div>
+    <div class="h"></div>
+    </div>
+    </div>
+    <style>
+      body {
+        margin: 0;
+        background: #004416;
+      }
+      .h {
+        width: 0;
+        height: 0;
+        border-bottom: 1.5rem solid #82CA9C;
+        border-right: 3rem solid transparent;
+        border-left: 3rem solid transparent;
+        position: relative;
+      }
+      .h:after {
+        position: absolute;
+        content: '';
+        width: 5rem;
+        height: 3rem;
+        background: #82CA9C;
+        top: 1rem;
+        left: -2rem;
+      }
+      .f {
+        display: flex;
+        justify-content: center;
+      }
+      .f.r {
+         transform: rotate(180deg);
+      }
+      .f.v {
+        flex-direction: column;
+        gap: 3.6rem;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
