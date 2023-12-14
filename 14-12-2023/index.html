@@ -1,0 +1,48 @@
+<div class="f">
+    <div class="s p"></div>
+    <div class="s"></div>
+    <div class="s p"></div>
+</div>
+<div class="f">
+    <div class="s"></div>
+    <div class="s d"></div>
+    <div class="s d"></div>
+    <div class="s"></div>
+</div>
+<div class="f">
+    <div class="s d"></div>
+</div>
+<div class="f">
+    <div class="s"></div>
+</div>
+<style>
+      body {
+        margin: 0;
+        background: #D4EFFC;
+        height: 100%;
+      }
+      .f {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: -12;
+      }
+      .f:first-child {
+        margin-top: 101;
+      }
+      .f:last-of-type {
+        margin-top: 29;
+      }
+      .s {
+        width: 40.5;
+        height: 40.5;
+        transform: rotate(45deg);
+        background: #7BAFDE;
+      }
+      .p {
+        background: #6867D4;
+      }
+      .d {
+        background: #000039;
+      }
+</style>
